@@ -3,77 +3,63 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Proje</title>				
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">	
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-			
-        
-
-        <style>
-            .usttable a {
-                
-                text-decoration: none;
-                text-align:center;
-            }
-            .ustmenu{
-                overflow:hidden;
-                background-color: rgb(38, 110, 134);
-            }
-            .usttable{
-                
+		<style>
+            form{
                 width:100%;
+                height:100%;
+                text-align:center;               
+                
             }
-            
-            .usttable a:hover {
-                background-color: #c04848;
-                color: black;
+            #ilkcol{
+                padding-top:20%;
             }
-            
-            .usttable th{
-
-                height:50px;
-                background-color:lightblue;
-                border-radius:20px;
+            .row col-md-6{
+                border-style: solid;
+                border-color:red;
             }
-            
-
-
-        </style>	
+        </style>
+			
+        	
 	</head>
 
 	<body>
-        <div class="ustmenu" id="ustTable">
-            <table class="usttable"> 
-                <tr>
-                    <th>
-                        <a href="#" class="logo"> g221210023</a>
-                    </th>
-                    <th>
-                        <a href="">Anasayfa</a>
-                    </th>
-                    <th>
-                        <a href="" > Hakkımda</a>
-                    </th>
-                    <th>
-                        <a href="#" > Özgeçmiş</a>
-                    </th>
-                    <th>
-                        <a href="#" class="logo"> Memleketim</a>
-                    </th>
-                    <th>
-                        <a href="#" class="logo"> İlgi alanlarım</a>
-                    </th>
-                </tr>
+           
 
-            </table>
-		
-		
-		
-		
-			
-		
+        <form method="POST" action="veriAl.php">
+            <div>
+			 <table class="row">   
+				<tr>
+				              
+					
+                    <div class="col-md-6" id="ilkcol">   
+                        Mail adresi: <input type="text" name="mail" required placeholder="Buraya mail giriniz." required  >
+                    </div>
+
+                    
+                    <br>
+				</tr>
+
+				<tr>
+                    <div class="col">   
+                        Şifre: <input type="password" name="sifre" required placeholder="Buraya şifrenizi giriniz." required  >
+                    </div>
+				    <br>
+				</tr>													
+				<tr>
+                    <div class="col">   
+                        <input type="submit" value="Giriş yap">
+                    </div>				     
+				</tr>
+				
+								
+			</table>   
+            </div>
+            
+             
+
+             
+        </form>
+
 	</body>
 
 </html>
