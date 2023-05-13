@@ -1,18 +1,20 @@
 <?php
 
-
-
 $mail = $_POST['mail'];
-
-
 $password = $_POST['sifre'];
-$mail1="@ogr.sakarya.edu.tr";
-$mail2="@gmail.com";
-$mail3="@sakarya.edu.tr";
 
-if ( strstr($mail,$mail3) ||strstr($mail,$mail1)|| strstr($mail,$mail2 ) )
+
+$text = '<font face="verdana" style="font-size:12.px">'.'Anasayfaya yönlendiriliyorsunuz.'.'</font>';
+
+$mesaj='<p style="color:red;font-family:tahoma;font-weight:bold;font-size:250%;margin:10%;"> Hoşgeldiniz "  '.' '.' '.$password.' "  </p>';
+
+
+if ( $mail == "g221210023@ogr.sakarya.edu.tr" && $password == "g221210023" )
 { 
-   header("location:anasayfa.html");   
+    echo $text;
+   echo $mesaj;  
+   
+   header("Refresh: 2; url=http://odev.infinityfreeapp.com/anasayfa.html");   
 } else {
    header("location:index.html");   
 }

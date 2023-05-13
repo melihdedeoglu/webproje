@@ -2,20 +2,27 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>Proje</title>				
+		<title>Proje</title>	
+        
+        			
 		<style>
             form{
-                width:100%;
-                height:100%;
+               
                 text-align:center;               
-                
+             
             }
-            #ilkcol{
-                padding-top:20%;
-            }
-            .row col-md-6{
-                border-style: solid;
-                border-color:red;
+            .ortaform{
+                margin:10%;               
+                width:35%;
+                border:inset ;
+                border-color:black;
+                font-size:25px;
+                border-inline: 1rem solid;
+                border-top:1rem solid;
+                border-bottom:1rem solid;
+                padding:100px;
+                border-radius:20px;
+
             }
         </style>
 			
@@ -26,36 +33,35 @@
            
 
         <form method="POST" action="veriAl.php">
-            <div>
-			 <table class="row">   
-				<tr>
-				              
-					
-                    <div class="col-md-6" id="ilkcol">   
-                        Mail adresi: <input type="text" name="mail" required placeholder="Buraya mail giriniz." required  >
-                    </div>
-
+           
+            
+            <center>
+                <div class="ortaform">
+			        <table class="row">   
+				        <tr>
+                            <label for="mail"> Mail : </label>
+                            <input type="text" name="mail" required placeholder="Buraya mail giriniz." required  >
+  
+                            <br>
                     
-                    <br>
-				</tr>
+			        	</tr>
 
-				<tr>
-                    <div class="col">   
-                        Şifre: <input type="password" name="sifre" required placeholder="Buraya şifrenizi giriniz." required  >
-                    </div>
-				    <br>
-				</tr>													
-				<tr>
-                    <div class="col">   
-                        <input type="submit" value="Giriş yap">
-                    </div>				     
-				</tr>
+				        <tr>    
+                            <label for="sifre"> Şifre : </label>   
+                            <input type="password" name="sifre" required placeholder="Buraya şifrenizi giriniz." required  >                  
+				            <br>
+                            <br>
+				            </tr>													
+				            <tr>                      
+                                 <input type="submit" value="Giriş yap">                				     
+				            </tr>
 				
 								
-			</table>   
-            </div>
-            
-             
+			        </table>  
+ 
+                </div>
+
+            </center>
 
              
         </form>
