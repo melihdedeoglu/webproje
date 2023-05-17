@@ -1,0 +1,257 @@
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Proje</title>				
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">       
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">	
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			
+
+        <style>
+            
+            .row .col-md-2 a{
+                font-size: 15px;
+                font-weight: bold;
+                float:left;
+                margin-left:20px;
+                color:black;
+                background-color:rgb(160, 110, 255);
+                text-align:center;
+                padding:18px 16px;
+                text-decoration: none;                 
+            }           
+            .row a:hover{
+                background-color: #ddd;
+                color: black;
+                height:80px;
+                width:150px;
+                text-align:center;
+                padding:30px 16px;
+
+            }
+
+            .row{
+                background-color: rgba(160, 110, 255,1);
+            }
+
+            body{
+                background-color:rgba(79, 219, 220,0.15);
+            }
+
+
+
+
+            
+            center .col-md-8{
+                
+                border:inset ;
+                border-color:black;              
+                border-inline: 1rem solid;
+                border-top:1rem solid;
+                border-bottom:1rem solid;             
+                border-radius:20px;
+                background-color:#fff;
+                
+                margin-left:18%;
+                margin-right:18%;
+                margin-top:3%;                     
+                padding:20px;                     
+            }
+
+            
+            form tr{
+                margin-bottom:10px;
+            }           
+            #buttonlar{
+                margin-top:10px;
+            }
+            #buttonlar input{
+                text-align:center;
+                font-size:20px;
+                width:100px;
+                border:solid 2px gray;
+                border-radius:10px;                
+            }
+            .col-md-10 #textbox{
+                text-align:center;
+                width:90%;
+                height:40px;
+                border:solid 2px gray;
+                border-radius:10px;
+                margin-left:10px;
+                margin-right:10px;
+            }
+            #sıra tr{
+                height:55px;
+            }
+
+            .col-md-10 #secim{                                           
+                height:17px;           
+            }
+            #sıra b{
+                font-weight:bold;
+                font-size:20px;
+            }
+           #tercih{
+                width:40%;
+                height:40px;
+           }
+           .col-md-10 p{
+               font-weight:bold;
+               font-size:30px;              
+           }
+           #secim{
+               width:40%;
+           }
+           .col-md-10{
+               margin-top:20px;
+               margin-left:7%;
+               margin-right:7%;
+               
+           }
+           textarea{
+               text-align:left;
+           }
+           
+
+
+
+        </style>	
+	</head>
+
+	<body>
+		
+        <div class="baslik">
+            <div class="row">
+                <div class="col-md-2" id="ab" >
+                    <a href="anasayfa.html" >  Anasayfa   </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="ozgecmis.html">   Özgeçmiş  </a>  
+                </div>
+                <div class="col-md-2">
+                    <a href="sehrim.html">Memleketim</a>
+                 </div>
+                <div class="col-md-2">
+                    <a href="takımımız.html">Takımımız</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="">İlgi alanlarım</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="">İletişim</a>
+                </div>           
+            </div>   
+        </div>
+
+        <center>
+            
+            <form action="iletisim.php" name="giris" method="POST" class="col-md-8">
+                
+
+                <div class="col-md-10">
+
+                    <p><b>İLETİŞİM</b></p> <br>
+
+                    <table id="sıra">
+                            
+                        <tr>
+                            <td>
+                                <b>İsminiz:</b>
+                            </td>
+                            <td >
+                                <input type="text"  placeholder="Buraya isminizi giriniz." name="isim"  id="textbox">                          
+                            </td>                       
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Mail:</b>
+                            </td>
+                            <td >
+                                <input type="text"  placeholder="Buraya mail giriniz." name="eposta" id="textbox" >                           
+                            </td>                     
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Şifre:</b>
+                            </td>
+                            <td >
+                                <input type="password"  placeholder="Buraya şifrenizi giriniz." name="sifre" id="textbox" >                          
+                            </td>
+                        </tr>
+
+                        <tr >
+                            <td>
+                                <b>Sevdiğiniz renk:</b>
+
+                            </td>
+                            <td>
+                                <input type="checkbox" name="renkler[]" value="Siyah" id="secim"> Siyah
+                                
+                                <input type="checkbox" name="renkler[]" value="Beyaz" id="secim"> Beyaz
+                                 
+                                <input type="checkbox" name="renkler[]" value="Siyah beyaz hariç diğer renkler" id="secim"> Diğer 
+                            </td>
+                        </tr>
+                        <tr >
+                            <td>
+                                <b>Cinsiyetiniz:</b>
+
+                            </td>
+                            <td>
+                                <input type="radio" name="cinsiyet" value="Erkek" id="secim" > Erkek 
+			                    <input type="radio" name="cinsiyet" value="Kadın"  id="secim"> Kadın	
+		                	    <input type="radio" name="cinsiyet" value="Diğer"  id="secim"> Diğer 
+                            </td>
+                        </tr>
+
+                    </table>
+                        
+                </div>
+
+
+                <div class="col-md-10" >
+                      
+                    <select name="tercihler" id="tercih">              
+                        <option value="-">Sayfamı beğendiniz mi?</option>
+                        <option value="Evet">Evet</option>
+                        <option value="Hayır">Hayır</option>
+                        <option value="Kararsızım">Kararsızım</option>
+                    </select>
+
+                </div>
+
+                <div class="col-md-10">
+
+                    <center>
+
+                        <textarea name="mesaj" rows="5" cols="30" placeholder="İsteklerinizi yazınız."></textarea>
+                 
+                    </center>
+  
+                </div>
+
+                <div class="col-md-10" id="buttonlar">
+
+                    <tr>
+                        <td>
+                            <input type="submit" value="Giriş" >
+                        </td>
+                        <td >
+                            <input type="reset" value="Temizle" >                         
+                        </td>
+
+                    </tr> 
+
+                </div>
+
+            </form>
+
+        </center>
+  		
+		
+	</body>
+
+</html>
