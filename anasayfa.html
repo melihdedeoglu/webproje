@@ -7,78 +7,8 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">       
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">	
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-			
-
-
-        <style>
-            
-            .row .col-md-2 a{
-                font-size: 15px;
-                font-weight: bold;
-                float:left;
-                margin-left:20px;
-                color:black;
-                background-color:rgb(180, 110, 255);
-                text-align:center;
-                padding:18px 16px;
-                text-decoration: none;                 
-            }           
-            .row a:hover{
-                background-color: #ddd;
-                color: black;
-                height:80px;
-                width:150px;
-                text-align:center;
-                padding:30px 16px;
-
-            }
-
-            .row{
-                background-color: rgba(160, 110, 255,1);
-            }
-
-            body{
-                background-color:rgba(79, 219, 220,0.15);
-            }
-            
-
-            .ilk{
-                margin-top:10px;
-                margin-left:20px; 
-                           
-            }
-            .ilk .col-md-6{
-                padding:15px;
-                border: 2px solid red;
-                border-radius:10px;
-                background-color:rgba(90, 251, 1,0.3);
-                
-            }
-            
-           
-            .ikinci{
-                margin-top:10px;
-                margin-left:20px;
-            }
-
-            .ikinci div{
-                
-                
-                padding:15px;
-                border: 2px solid red;
-                border-radius:10px;
-                background-color:rgba(90, 251, 1,0.3);
-            }
-            .img2 {
-                 float: right;
-                }
-            .ikinci::after{
-                    content: "";
-                    clear: both;
-                    display: table;
-            }
-
-        </style>	
+		<link rel="stylesheet" href="stiller.css">
+        	
 	</head>
 
 	<body >
@@ -98,87 +28,118 @@
                     <a href="takımımız.html">Takımımız</a>
                 </div>
                 <div class="col-md-2">
-                    <a href="#">İlgi alanlarım</a>
+                    <a href="ilgialanlarım.html">İlgi alanlarım</a>
                 </div>
                 <div class="col-md-2">
                     <a href="iletisim.html">İletişim</a>
                 </div>           
             </div>   
         </div>
-        
+               
         <div class="hakkimda">
+        
+            <div class="col-md-10" id="sıfır">
 
-            <div class="ilk">
-                <div class="col-md-6" id="ilk1">
+                <b> HAKKIMDA </b>
+                
+            </div>
+
+            <div class="col-md-10" id="bir">
+
+                <div class="col-md-6">
+
                     <b> Kişisel bilgilerim: </b>
+
                     <p>
-                        Adım soyadım Melih Dedeoğlu.
-                        Memleketim Ordu. İlçe olarak Ünye. 18 yaşındayım. Başak burcuyum.                      
+                        Adım soyadım Melih Dedeoğlu.                                         
                     </p>
                     <p>
-                        Hobilerim arasında bilgisayar oyunu oynamak, konsol oyunları oynamak, arkadaşlarımla gezmek, yabancı filmler/diziler izlemek yer alıyor.
+                       Memleketim Ordu. İlçe olarak Ünye. 18 yaşındayım. Başak burcuyum.
                     </p>
-                    <p>
-                        Yapmaktan hoşlandığım etkinliklerden biri sinemaya gitmektir.
-                    </p>    
                     <p>
                         Web teknolojileri dersinde 2. öğretim A grubundayım.     
-
                     </p>
-                </div>
-                <div class="col-md-6" id="ilk2">
-                    <b> Sevdiğim bilgisayar oyunları: </b>
-                    
-                    <p> -Counter-Strike: Global Offensive </p>
-                    <p> -The Forest  </p> 
-                    <p> -Valorant   </p>
-                    <p> -FIFA </p>                                                                     
-                </div>
-            </div>
-        
-            
 
-            <div class="ikinci">
-                <div class="col-md-7" id="ikinci1">
-                    <img class="img2" src="manchester_city_logo_PNG2.png" alt="Pineapple" width="100" height="100">
+                </div>
+
+                <div class="col-md-6">
+
+                    <b> Hobilerim: </b> 
+
+                    <li>Bilgisayar oyunu oynamak.</li>
+                    <li>Konsol oyunları oynamak.</li>
+                    <li>Sinemaya gitmek, dizi/film izlemek.</li>
+                    <li>Arkadaşlarımla gezmek</li>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-10" id="iki">
+
+                <div class="col-md-6">
+
+                    <b> Severek izleyip bitirdiğim filmler/diziler: </b>  
+
+                    <li>Game of Thrones</li>
+                    <li>The Witcher</li>                                       
+                    <li>Deadpool</li>
+                    <li>Labirent serisi</li>
+                    <li>Hızlı ve Öfkeli serisi</li>
+                    <li>Marvel filmleri ve dizileri</li>
+                                    
+                </div>
+
+                <div class="col-md-6">
+
                     <b> Sevdiğim Spor: Futbol </b>
+
+                    <img class="img-responsive" id="img1" src="citylogo.png" alt="Pineapple" width="150" height="150">
                  
                     <p>
-                        Futbol maçları izlemeyi seviyorum. Özellikle büyük takımların maçlarını.                     
+                        Futbol maçları izlemeyi seviyorum. Özellikle büyük takımların maçlarını.                                             
                     </p>
                     <p>
-                        En çok sevdiğim takım Manchester City.
+                        En sevdiğim takım Manchester City.
                     </p>
                     <p>
-                        İngiltere Ligi ve Şampiyonlar Ligi maçlarını ayrı bir heyecanla izliyorum
+                        İngiltere Ligi ve Şampiyonlar Ligi maçlarını ayrı bir heyecanla izliyorum.
                     </p> 
-                    
-                
-                    
-                </div>    
-                <div class="col-md-3">
-                    <b> Severek izleyip bitirdiğim filmler/diziler: </b>                    
-                    <p> -Game of Thrones </p>
-                    <p> -Marvel filmleri ve dizileri </p>
-                    <p> -The Witcher </p>                        
-            
+
+
                 </div>
-                <div class="col-md-2">
-                    <b> Eğitim sürecim: </b>                    
-                    <p> Mehmet Akif Ersoy İlkokulu </p>
-                    <p> Mehmet Akif Ersoy Ortaokulu </p>
-                    <p> Ünye Fen Lisesi </p>
-                    <p> Sakarya Üniversitesi </p>              
-            
+      
+            </div>
+
+            <div class="col-md-10" id="üç">
+
+                <div class="col-md-6">
+
+                    <b> Sevdiğim bilgisayar oyunları: </b>
+
+                    <li>Call of Duty</li>
+                    <li>The Forest</li>
+                    <li>Valorant</li>
+                    <li>FIFA</li>
+                    <li>Minecraft</li>
+                                  
+                </div>
+
+                <div class="col-md-6">
+           
+                    <b> Eğitim sürecim: </b> 
+
+                    <li>Mehmet Akif Ersoy İlkokulu</li>
+                    <li>Mehmet Akif Ersoy Ortaokulu</li>
+                    <li>Ünye Fen Lisesi</li>
+                    <li>Sakarya Üniversitesi</li>
+                                   
                 </div>
                 
             </div>
 
         </div>    
-		
-		
-			
-		
+							
 	</body>
 
 </html>

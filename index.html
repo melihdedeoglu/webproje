@@ -2,42 +2,19 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>Proje</title>	
-        
-        			
-		<style>
-            form{
-               
-                text-align:center;               
-             
-            }
-            .ortaform{
-                margin:10%;               
-                width:35%;
-                border:inset ;
-                border-color:black;
-                font-size:25px;
-                border-inline: 1rem solid;
-                border-top:1rem solid;
-                border-bottom:1rem solid;
-                padding:100px;
-                border-radius:20px;
-
-            }
-        </style>
-			
-        	
+		<title>Proje</title>
+        <link rel="stylesheet" href="stiller.css">	
+           	
 	</head>
 
 	<body>
            
-
         <form method="POST" action="veriAl.php">
-           
-            
-            <center>
+                     
+            <center class="col-md-12" id="logincenter">
                 <div class="ortaform">
-			        <table class="row">   
+
+			        <table >   
 				        <tr>
                             <label for="mail"> Mail : </label>
                             <input type="text" name="mail" required placeholder="Buraya mail giriniz." required  >
@@ -51,21 +28,22 @@
                             <input type="password" name="sifre" required placeholder="Buraya şifrenizi giriniz." required  >                  
 				            <br>
                             <br>
-				            </tr>													
-				            <tr>                      
-                                 <input type="submit" value="Giriş yap">                				     
-				            </tr>
-				
-								
-			        </table>  
+				        </tr>													
+				        <tr>                      
+                            <input  type="submit" value="Giriş yap">                				     
+				        </tr>
+
+		            </table>  
  
                 </div>
 
             </center>
-
-             
+            
         </form>
 
 	</body>
 
 </html>
+
+
+       

@@ -1,0 +1,359 @@
+.baslik{
+    width:99%;
+}
+.row .col-md-2 a{
+    font-size: 15px;
+    font-weight: bold;
+    float:left;
+    margin-left:18px;
+    color:black;
+    background-color: rgb(160, 110, 255);
+    text-align:center;
+    padding:18px 30px;
+    text-decoration: none;                 
+}           
+.row a:hover{
+    background-color: #ddd;
+    color: black;
+    height:80px;
+    width:140px;
+    text-align:center;
+    padding:30px 16px;
+}
+.row{
+    background-color: rgb(160, 110, 255);
+}
+body{
+    background-color:rgba(79, 219, 220,0.15);
+}
+
+
+
+
+
+#logincenter{          
+    margin-top:15%;
+}
+.ortaform{                                             
+    width:35%;
+    border:inset ;
+    border-color:black;
+    font-size:25px;
+    border-left: 1rem solid;
+	border-right:1rem solid;
+    border-top:1rem solid;
+    border-bottom:1rem solid;
+    padding:100px;
+    border-radius:20px;
+    background-color: #fff;
+}
+.ortaform input{               
+    border:solid 2px;
+    border-radius:15px;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+}
+
+
+
+
+.hakkimda{
+    padding:30px;
+                
+}
+.hakkimda .col-md-10{
+    margin-left:8%;
+    margin-right:8%;              
+    padding:30px;               
+}
+.hakkimda b{
+    font-size:30px;               
+}
+.hakkimda p{
+    font-size:20px;
+}
+
+#sıfır{
+    text-align:center;
+}
+.hakkimda li{
+    font-size:20px;
+}
+#bir{
+    background-color:white;
+    border-style:solid solid none solid;
+    border-color:black;
+    border-width:5px;
+    border-radius:6px 6px 0px 0px;                                                 
+}
+#bir .col-md-6{              
+    padding:1%;
+    padding-left:7%;
+    padding-right:7%;
+}
+#iki{
+    background-color:white;
+    border-style: none solid ;
+    border-color:black;
+    border-width:5px;                                        
+}
+#iki .col-md-6{              
+padding:1%;
+padding-left:7%;
+padding-right:7%;
+}
+#üç{
+    background-color:white;
+    border-style: none solid solid solid;
+    border-color:black;
+    border-width:5px;  
+    border-radius:0px 0px 6px 6px; 
+    margin-bottom:30px;           
+}
+#üç .col-md-6{              
+    padding:1%;
+    padding-left:7%;
+    padding-right:7%;
+}   
+.hakkimda #img1{
+    float:right;               
+}
+           
+
+
+
+           
+header{
+    padding:50px 20px 30px 20px;            
+    text-align: center;  
+    font-size:30px;
+    text-shadow:1px 1px rgba(0,0,0,.9);  
+}
+.isim{
+    text-align: left; 
+    font-weight:bold;
+    font-size:30px;   
+}    
+main{                
+    padding:15px; 
+    font-size: 19px;
+}
+article{           
+    padding:15px;
+    border-top:solid 2px gray;
+    margin-left:14px;
+    margin-right:14px;   
+}
+.masa{
+    font-size: 19px;
+}       
+.bold{          
+font-weight:bold;  
+}
+#col-md-9{
+    margin-left:12%;
+    margin-right:12%;
+}
+footer{
+    padding:30px; 
+    font-size: 19px;              
+    border-left: solid 5px gray;
+}
+.masa td{
+    margin:15px;
+}
+.altbas{
+    margin-left:10px;
+}
+
+
+
+
+
+#sehrimbaslik{
+    margin-bottom:50px;
+}
+.içerik{
+    padding:35px;
+}
+.içerik b{
+    font-size: 30px;
+}
+.içerik p{
+    font-size: 18px;
+}
+.içerik li{
+    font-size: 18px;
+}
+#myCarousel{
+    width: 500px;
+    height: 320px;
+    margin-bottom:60px;              
+}
+.içerik .col-md-11{
+    background-color:white;
+    border-style:none solid;
+    border-width:5px;
+    border-radius:10px;
+    margin-left:5%;
+    margin-right:5%;
+    padding:20px;
+}
+.içerik .col-md-11 p{              
+    font-size:20px;
+}
+#aciklama .col-md-12 {               
+    border-top:solid 2px gray;               
+}
+#içerikbaş{
+    border-style:solid solid none solid;
+    border-radius:10px;
+}
+#içerikson{
+    border-style:none solid solid solid;
+    border-radius:10px;               
+}
+#ulugöl{
+    margin-bottom:50px;
+}
+#aciklama img{
+    border-radius:10px;
+}
+#aciklama{
+    background-color:white;
+    border-style:solid ;
+    border-width:5px;
+    border-radius:10px;
+    margin:2% 5% ;
+}
+
+
+
+
+
+#takimbaş{
+    background-color:white;
+    margin:0px 33%;
+    padding:0px 2%;
+    margin-top:20px;
+    text-align:center;
+    border-style:solid solid none solid;
+    border-width:5px; 
+    border-radius:6px 6px 0 0;              
+}
+#takim1{
+    background-color:white;
+    margin-left:8%;
+    margin-right:8%;
+    border-style:solid;
+    border-width:5px;
+    border-radius:6px; 
+    margin-bottom:2%;
+}
+#takim1 .col-md-4{               
+    padding:3% 7%;
+}
+#takim1 .col-md-4 li{               
+    font-size:17px;
+}
+h2{          
+    font-size:30px;
+    font-weight:bold;
+}
+
+
+
+
+
+
+#ilgicenter{
+    margin-left:24%;
+    margin-right:24%;
+}        
+#ilgicenter{
+    border: 6px solid;
+    border-radius:5px;
+    background-color:white;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+#ilgidiv div{
+    font-size:20px;
+    margin-top:20px;
+}
+#ara{
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+
+
+
+
+#iletisimcenter .col-md-8{
+                
+    border:inset ;
+    border-color:black;              
+    border-left: 1rem solid;
+	border-right:1rem solid;
+    border-top:1rem solid;
+    border-bottom:1rem solid;             
+    border-radius:20px;
+    background-color:white;               
+    margin-left:18%;
+    margin-right:18%;
+    margin-top:3%;                     
+    padding:20px;                     
+}           
+form tr{
+    margin-bottom:10px;
+}           
+#buttonlar{
+    margin-top:10px;
+}
+#buttonlar input{
+    text-align:center;
+    font-size:20px;
+    width:100px;
+    border:solid 2px gray;
+    border-radius:10px;                
+}
+form .col-md-10 #textbox{
+    text-align:center;
+    width:90%;
+    height:40px;
+    border:solid 2px gray;
+    border-radius:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+#sıra tr{
+    height:55px;
+}
+form .col-md-10 #secim{                                           
+    height:17px;           
+}
+#sıra b{
+    font-weight:bold;
+    font-size:20px;
+}
+#tercih{
+    width:40%;
+    height:40px;
+}
+form .col-md-10 p{
+    font-weight:bold;
+    font-size:30px;              
+}
+#secim{
+    width:40%;
+}
+form .col-md-10{
+    margin-top:20px;
+    margin-left:7%;
+    margin-right:7%;              
+}
+textarea{
+    text-align:left;
+}

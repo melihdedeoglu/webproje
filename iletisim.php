@@ -7,8 +7,6 @@ $cinsiyet = $_POST['cinsiyet'];
 $tercih = $_POST['tercihler'];
 $mesaj = $_POST['mesaj'];
 
-
-
 $çıktı=' <p style="font-family:tahoma;font-size:130%;margin-top:5%;margin-left:30%;"> <b>İsminiz: </b>   '.' '.' '.$name.'   </p><br>
         <p style="font-family:tahoma;font-size:130%;margin-left:30%;"> <b>Mailiniz:</b>   '.' '.' '.$eposta.'   </p><br>
         <p style="font-family:tahoma;font-size:130%;margin-left:30%;"> <b>Şifreniz:</b>   '.' '.' '.$password.'  </p><br>
@@ -18,11 +16,10 @@ $çıktı=' <p style="font-family:tahoma;font-size:130%;margin-top:5%;margin-lef
 
 echo $çıktı;
 
-echo ' <p style="font-family:tahoma;font-size:130%;margin-left:30%;"> <b>Sevdiğiniz renkler: </b> </p>';
-
 if(isset($_POST['renkler'])) {
     
     $renkler = $_POST['renkler'];
+    echo ' <p style="font-family:tahoma;font-size:130%;margin-left:30%;"> <b>Sevdiğiniz renkler: </b> </p>';
  
     foreach($renkler as $renk) {
 
@@ -32,6 +29,5 @@ if(isset($_POST['renkler'])) {
 }
 
 echo '<div style="margin-left:30%;margin-top:5%;" > <a href="iletisim.html" > <button> iletişim sayfasına dön</button> </a> </div>';
-
 
 ?>

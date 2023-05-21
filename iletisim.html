@@ -7,118 +7,8 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">       
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">	
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-			
-
-        <style>
-            
-            .row .col-md-2 a{
-                font-size: 15px;
-                font-weight: bold;
-                float:left;
-                margin-left:20px;
-                color:black;
-                background-color:rgb(160, 110, 255);
-                text-align:center;
-                padding:18px 16px;
-                text-decoration: none;                 
-            }           
-            .row a:hover{
-                background-color: #ddd;
-                color: black;
-                height:80px;
-                width:150px;
-                text-align:center;
-                padding:30px 16px;
-
-            }
-
-            .row{
-                background-color: rgba(160, 110, 255,1);
-            }
-
-            body{
-                background-color:rgba(79, 219, 220,0.15);
-            }
-
-
-
-
-            
-            center .col-md-8{
-                
-                border:inset ;
-                border-color:black;              
-                border-inline: 1rem solid;
-                border-top:1rem solid;
-                border-bottom:1rem solid;             
-                border-radius:20px;
-                background-color:#fff;
-                
-                margin-left:18%;
-                margin-right:18%;
-                margin-top:3%;                     
-                padding:20px;                     
-            }
-
-            
-            form tr{
-                margin-bottom:10px;
-            }           
-            #buttonlar{
-                margin-top:10px;
-            }
-            #buttonlar input{
-                text-align:center;
-                font-size:20px;
-                width:100px;
-                border:solid 2px gray;
-                border-radius:10px;                
-            }
-            .col-md-10 #textbox{
-                text-align:center;
-                width:90%;
-                height:40px;
-                border:solid 2px gray;
-                border-radius:10px;
-                margin-left:10px;
-                margin-right:10px;
-            }
-            #sıra tr{
-                height:55px;
-            }
-
-            .col-md-10 #secim{                                           
-                height:17px;           
-            }
-            #sıra b{
-                font-weight:bold;
-                font-size:20px;
-            }
-           #tercih{
-                width:40%;
-                height:40px;
-           }
-           .col-md-10 p{
-               font-weight:bold;
-               font-size:30px;              
-           }
-           #secim{
-               width:40%;
-           }
-           .col-md-10{
-               margin-top:20px;
-               margin-left:7%;
-               margin-right:7%;
-               
-           }
-           textarea{
-               text-align:left;
-           }
-           
-
-
-
-        </style>	
+		<link rel="stylesheet" href="stiller.css">	
+        
 	</head>
 
 	<body>
@@ -138,7 +28,7 @@
                     <a href="takımımız.html">Takımımız</a>
                 </div>
                 <div class="col-md-2">
-                    <a href="">İlgi alanlarım</a>
+                    <a href="ilgialanlarım.html">İlgi alanlarım</a>
                 </div>
                 <div class="col-md-2">
                     <a href="">İletişim</a>
@@ -146,11 +36,10 @@
             </div>   
         </div>
 
-        <center>
+        <center id="iletisimcenter">
             
             <form action="iletisim.php" name="giris" method="POST" class="col-md-8">
                 
-
                 <div class="col-md-10">
 
                     <p><b>İLETİŞİM</b></p> <br>
@@ -188,11 +77,12 @@
 
                             </td>
                             <td>
-                                <input type="checkbox" name="renkler[]" value="Siyah" id="secim"> Siyah
+                                <input type="checkbox" name="renkler[]" value="Kırmızı" id="secim">Kırmızı
                                 
-                                <input type="checkbox" name="renkler[]" value="Beyaz" id="secim"> Beyaz
-                                 
-                                <input type="checkbox" name="renkler[]" value="Siyah beyaz hariç diğer renkler" id="secim"> Diğer 
+                                <input type="checkbox" name="renkler[]" value="Turuncu" id="secim">Turuncu
+
+                                <input type="checkbox" name="renkler[]" value="Mavi" id="secim">Mavi                          
+                                
                             </td>
                         </tr>
                         <tr >
@@ -201,16 +91,15 @@
 
                             </td>
                             <td>
-                                <input type="radio" name="cinsiyet" value="Erkek" id="secim" > Erkek 
-			                    <input type="radio" name="cinsiyet" value="Kadın"  id="secim"> Kadın	
-		                	    <input type="radio" name="cinsiyet" value="Diğer"  id="secim"> Diğer 
+                                <input type="radio" name="cinsiyet" value="Erkek" id="secim" >Erkek 
+			                    <input type="radio" name="cinsiyet" value="Kadın"  id="secim">Kadın	
+		                	    <input type="radio" name="cinsiyet" value="Diğer"  id="secim">Diğer 
                             </td>
                         </tr>
 
                     </table>
                         
                 </div>
-
 
                 <div class="col-md-10" >
                       
@@ -227,7 +116,7 @@
 
                     <center>
 
-                        <textarea name="mesaj" rows="5" cols="30" placeholder="İsteklerinizi yazınız."></textarea>
+                        <textarea name="mesaj" rows="3" cols="20" placeholder="İsteklerinizi yazınız."></textarea>
                  
                     </center>
   
@@ -235,14 +124,13 @@
 
                 <div class="col-md-10" id="buttonlar">
 
-                    <tr>
-                        <td>
-                            <input type="submit" value="Giriş" >
-                        </td>
+                    <tr>                       
                         <td >
                             <input type="reset" value="Temizle" >                         
                         </td>
-
+                        <td>
+                            <input type="submit" value="Gönder" >
+                        </td>
                     </tr> 
 
                 </div>
@@ -250,7 +138,31 @@
             </form>
 
         </center>
-  		
+        
+        <script>
+            var form = document.forms["giris"]; 
+            var isim= form["isim"];
+            var eposta = form["eposta"];   
+            var sifre = form["sifre"];            
+            var cinsiyet= form["cinsiyet"];
+            var mesaj = form["mesaj"];
+            var tercih = form["tercihler"];
+
+             form.onsubmit = function()
+            {
+                if( isim.value=="" || eposta.value == "" || sifre.value == "" || cinsiyet.value=="" || tercih.value=="-" || mesaj.value=="" )
+                {
+                    alert("Tüm alanları doldurun!!!");
+                    return false;
+                }
+                else if(eposta.value.indexOf("@sakarya.edu.tr") == -1)
+                {
+                    alert("Mailinizi @sakarya.edu.tr formatıyla yazınız!!!");
+                    return false;
+                }
+            }
+
+        </script>
 		
 	</body>
 
